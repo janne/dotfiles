@@ -1,0 +1,7 @@
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+[user]
+	email = jan.andersson@gear.se
+	name = Jan Andersson
