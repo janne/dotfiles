@@ -8,5 +8,5 @@ export EDITOR="mate -w"
 alias webshare='python -c "import SimpleHTTPServer;SimpleHTTPServer.test()"'
 
 # Git scripts
-source ~/.git-prompt.sh
-source ~/.git-completion.sh
+source ~/.git_prompt.sh
+source ~/.git_completion.sh
