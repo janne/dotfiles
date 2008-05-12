@@ -6,7 +6,7 @@ Warning: Overwrites current dotfiles on installation!
 
 How to install them?
 ====================
-git clone git@github.com:janne/dotfiles.git 
+git clone git://github.com/janne/dotfiles.git
 cd dotfiles
 ./install.sh
 
