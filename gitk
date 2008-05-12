@@ -1,6 +1,6 @@
-set mainfont {Helvetica 9}
-set textfont {Courier 9}
-set uifont {Helvetica 9 bold}
+set mainfont {Monaco 12}
+set textfont {Monaco 12}
+set uifont {"Monaco bold" 12}
 set tabstop 8
 set findmergefiles 0
 set maxgraphpct 50
