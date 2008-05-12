@@ -1,13 +1,12 @@
-set mainfont {Monaco 12}
-set textfont {Monaco 12}
-set uifont {"Monaco bold" 12}
+set mainfont {Helvetica 9}
+set textfont {Courier 9}
+set uifont {Helvetica 9 bold}
 set tabstop 8
 set findmergefiles 0
 set maxgraphpct 50
 set maxwidth 16
 set cmitmode patch
 set wrapcomment none
-set autoselect 1
 set showneartags 1
 set showlocalchanges 1
 set datetimeformat {%Y-%m-%d %H:%M:%S}
