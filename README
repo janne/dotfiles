@@ -1,0 +1,15 @@
+About
+=====
+Contains a set of dotfiles. There is an installation script to softlink them to the users home directory.
+Warning: Overwrites current dotfiles on installation!
+
+How to install them?
+====================
+git clone janne@git.gear.se:repo/dotfiles.git
+cd dotfiles
+./install.sh
+
+Credentials
+===========
+Developed by Chris Wanstrath (http://errtheblog.com/posts/89-huba-huba)
+Modified by Jan Andersson
