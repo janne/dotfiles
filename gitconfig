@@ -11,3 +11,5 @@
 	diff = auto
 	status = auto
 	branch = auto
+[core]
+	whitespace = -trailing-space
