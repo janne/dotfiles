@@ -1,5 +1,7 @@
 if has("gui_macvim")
+  set columns=140
+  set lines=40
   set guifont=Monaco:h12
-  set background=dark
   set guioptions-=T
+  colorscheme darkblue
 endif
