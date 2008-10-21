@@ -28,3 +28,7 @@ map ,n :NERDTreeToggle<CR>
 map ,f :Rfind<space>
 map ,c :Rscript console<CR>
 map ,d :Rscript dbconsole<CR>
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-H> <C-W>h
+map <C-L> <C-W>l
