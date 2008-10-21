@@ -1,9 +1,12 @@
 " Basic setup
 set nocompatible
+set ignorecase
+set smartcase
 filetype plugin indent on
 
 " Don't break words in middle
 set linebreak
+set showbreak=>\ 
 
 " Show ruler
 set ruler
@@ -20,4 +23,8 @@ set shiftwidth=2
 set expandtab
 
 " Maps
-map <F6> :NERDTreeToggle<CR>
+imap <M-Space> <space>
+map ,n :NERDTreeToggle<CR>
+map ,f :Rfind<space>
+map ,c :Rscript console<CR>
+map ,d :Rscript dbconsole<CR>
