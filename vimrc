@@ -6,7 +6,7 @@ filetype plugin indent on
 
 " Don't break words in middle
 set linebreak
-set showbreak=>\ 
+set number
 
 " Show ruler
 set ruler
