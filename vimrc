@@ -32,3 +32,9 @@ map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-H> <C-W>h
 map <C-L> <C-W>l
+map <D-1> :tabfirst<CR>
+map <D-2> :tabfirst<CR>:tabnext<CR>
+map <D-3> :tabfirst<CR>:tabnext<CR>:tabnext<CR>
+map <D-4> :tabfirst<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>
+map <D-5> :tabfirst<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>
+map <D-6> :tabfirst<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>
