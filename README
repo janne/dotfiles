@@ -10,6 +10,8 @@ git clone git://github.com/janne/dotfiles.git
 cd dotfiles
 ./install.sh
 
+Update as needed. Especially have a look at gitconfig.
+
 Credentials
 ===========
 Developed by Chris Wanstrath (http://errtheblog.com/posts/89-huba-huba)
