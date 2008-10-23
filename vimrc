@@ -33,22 +33,28 @@ map <D-3> :tabfirst<CR>:tabnext<CR>:tabnext<CR>
 map <D-4> :tabfirst<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>
 map <D-5> :tabfirst<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>
 
+" Change leader
+let mapleader = ","
+
 " FuzzyFinder plugin
 let g:fuzzy_matching_limit=30
 if has("ruby")
-  map ,t :FuzzyFinderTextMate<CR>
+  map <leader>t :FuzzyFinderTextMate<CR>
 else
-  map ,t :FuzzyFinderFile<CR>
+  map <leader>t :FuzzyFinderFile<CR>
 end
 
 " Rails plugin
-map ,f :Rfind<space>
-map ,c :Rscript console<CR>
-map ,d :Rscript dbconsole<CR>
+map <leader>f :Rfind<space>
+map <leader>c :Rscript console<CR>
+map <leader>d :Rscript dbconsole<CR>
 
 " NERDTree plugin
-map ,n :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
 map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-H> <C-W>h
 map <C-L> <C-W>l
+
+" Ack plugin
+map <leader>a :call Ack()<cr>
