@@ -1,15 +1,15 @@
 [alias]
-	co = checkout
-	ci = commit
-	st = status
+  co = checkout
+  ci = commit
+  st = status
 
 [user]
-	email = jan.andersson@gear.se
-	name = Jan Andersson
+  email = jan.andersson@gear.se
+  name = Jan Andersson
 
 [color]
-	diff = auto
-	status = auto
-	branch = auto
+  diff = auto
+  status = auto
+  branch = auto
 [core]
-	whitespace = -trailing-space
+  whitespace = -trailing-space
