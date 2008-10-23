@@ -4,8 +4,9 @@
 
 home = File.expand_path('~')
 
-Dir['*'].each do |file|
-  next if file =~ /install/
+files = Dir['*'] - ["install.sh", "README"]
+files.each do |file|
   target = File.join(home, ".#{file}")
-  `ln -fs #{File.expand_path file} #{target}`
+  puts "Installing ~/.#{file}"
+  `ln -fsh #{File.expand_path file} #{target}`
 end
