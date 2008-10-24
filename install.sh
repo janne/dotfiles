@@ -12,5 +12,5 @@ files = Dir['*'].select{|file|
 files.each do |file|
   target = File.join(home, ".#{file}")
   puts "Installing ~/.#{file}"
-  `ln -fsh #{File.expand_path file} #{target}`
+  `ln -fsT #{File.expand_path file} #{target}`
 end
