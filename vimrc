@@ -17,6 +17,9 @@ set gdefault
 " Syntax highlight
 syntax on
 
+" Automatically remove all trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
+
 " Fix tabs
 filetype plugin indent on
 set tabstop=2
