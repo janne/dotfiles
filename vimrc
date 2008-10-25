@@ -39,6 +39,10 @@ map <D-5> :tabfirst<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>
 " Change leader
 let mapleader = ","
 
+" SuperTab plugin
+let g:SuperTabMappingForward = '<s-tab>'
+let g:SuperTabMappingBackward = '<tab>'
+
 " FuzzyFinder plugin
 let g:fuzzy_matching_limit=30
 if has("ruby")
