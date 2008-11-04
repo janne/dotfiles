@@ -18,7 +18,7 @@ set gdefault
 syntax on
 
 " Automatically remove all trailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
+" autocmd BufWritePre * :%s/\s\+$//e
 
 " Fix tabs
 filetype plugin indent on
@@ -38,10 +38,6 @@ map <D-5> :tabfirst<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>
 
 " Change leader
 let mapleader = ","
-
-" SuperTab plugin
-let g:SuperTabMappingForward = '<s-tab>'
-let g:SuperTabMappingBackward = '<tab>'
 
 " FuzzyFinder plugin
 let g:fuzzy_matching_limit=30

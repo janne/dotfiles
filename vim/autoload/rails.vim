@@ -3906,6 +3906,7 @@ function! s:BufAbbreviations()
     Rabbrev :i    :id\ =>\ 
     Rabbrev :o    :object\ =>\ 
     Rabbrev :p    :partial\ =>\ 
+    Rabbrev do    do<return>end<esc>O
     Rabbrev logd( logger.debug
     Rabbrev logi( logger.info
     Rabbrev logw( logger.warn
