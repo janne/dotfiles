@@ -5,6 +5,9 @@ export LC_CTYPE=sv_SE.UTF-8
 export CLICOLOR=1
 export EDITOR="mvim --nofork"
 
+# Aliases
+ls="ls -h"
+
 # Git scripts
 source ~/.git_prompt.sh
 source ~/.git_completion.sh
