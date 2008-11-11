@@ -4,7 +4,11 @@
 
 home = File.expand_path('~')
 
-files = Dir['*'] - ["install.sh", "README"]
+files = Dir['*'].select{|file| 
+  not (file == "install.sh" or
+  file == "README" or
+  file =~ /.template$/) 
+}
 files.each do |file|
   target = File.join(home, ".#{file}")
   puts "Installing ~/.#{file}"

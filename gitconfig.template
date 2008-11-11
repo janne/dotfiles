@@ -1,0 +1,20 @@
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+
+[user]
+  email = YOUR.EMAIL@company.com
+  name = YOUR NAME
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+
+[core]
+  whitespace = -trailing-space
+
+[github]
+  user = GITHUB_USER
+  token = 12345678901234567890
