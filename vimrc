@@ -41,6 +41,12 @@ map <D-5> :tabfirst<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>
 " Change leader
 let mapleader = ","
 
+" Window mappings
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-H> <C-W>h
+map <C-L> <C-W>l
+
 " FuzzyFinder plugin
 let g:fuzzy_matching_limit=30
 if has("ruby")
@@ -56,10 +62,7 @@ map <leader>d :Rscript dbconsole<CR>
 
 " NERDTree plugin
 map <leader>n :NERDTreeToggle<CR>
-map <C-J> <C-W>j
-map <C-K> <C-W>k
-map <C-H> <C-W>h
-map <C-L> <C-W>l
 
 " Ack plugin
 map <leader>a :call Ack()<cr>
+map <leader>w :call Ack(expand("<cword>"))<cr>
