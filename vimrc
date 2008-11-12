@@ -12,17 +12,25 @@ set ruler
 nnoremap ' `
 nnoremap ` '
 
+" Change leader
+let mapleader = ","
+
 " Search
 set incsearch
 set ignorecase
 set smartcase
 set gdefault
+set hlsearch
+
+" Switch off hlsearch temporarily
+nmap <silent> <leader>h :silent :nohlsearch<CR>
 
 " Syntax highlight
 syntax on
 
-" Automatically remove all trailing whitespace
-" autocmd BufWritePre * :%s/\s\+$//e
+" Catch trailing whitespace
+set listchars=tab:>-,trail:·
+nmap <silent> <leader>s :set nolist!<CR>
 
 " Fix tabs
 filetype plugin indent on
@@ -42,9 +50,6 @@ map <D-3> :tabfirst<CR>:tabnext<CR>:tabnext<CR>
 map <D-4> :tabfirst<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>
 map <D-5> :tabfirst<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>
 
-" Change leader
-let mapleader = ","
-
 " Window mappings
 map <C-J> <C-W>j
 map <C-K> <C-W>k
@@ -60,13 +65,14 @@ else
 end
 
 " Rails plugin
-map <leader>f :Rfind<space>
-map <leader>c :Rscript console<CR>
-map <leader>d :Rscript dbconsole<CR>
+nmap <leader>f :Rfind<space>
+nmap <leader>c :Rscript console<CR>
+nmap <leader>d :Rscript dbconsole<CR>
 
 " NERDTree plugin
-map <leader>n :NERDTreeToggle<CR>
+nmap <leader>n :NERDTreeToggle<CR>
 
 " Ack plugin
-map <leader>a :call Ack()<cr>
-map <leader>w :call Ack(expand("<cword>"))<cr>
+nmap <leader>a :call Ack()<cr>
+nmap <leader>w :call Ack(expand("<cword>"))<cr>
+
