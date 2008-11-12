@@ -8,6 +8,10 @@ set number
 " Show ruler
 set ruler
 
+" Swap ` and '
+nnoremap ' `
+nnoremap ` '
+
 " Search
 set incsearch
 set ignorecase
