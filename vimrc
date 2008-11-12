@@ -30,6 +30,7 @@ syntax on
 
 " Catch trailing whitespace
 set listchars=tab:>-,trail:·
+set list
 nmap <silent> <leader>s :set nolist!<CR>
 
 " Fix tabs
@@ -44,11 +45,11 @@ set autoindent
 imap <M-Space> <space>
 
 " Fix cmd+1, cmd+2 etc
-map <D-1> :tabfirst<CR>
-map <D-2> :tabfirst<CR>:tabnext<CR>
-map <D-3> :tabfirst<CR>:tabnext<CR>:tabnext<CR>
-map <D-4> :tabfirst<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>
-map <D-5> :tabfirst<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>:tabnext<CR>
+nmap <D-1> 1gt
+nmap <D-2> 2gt
+nmap <D-3> 3gt
+nmap <D-4> 4gt
+nmap <D-5> 5gt
 
 " Window mappings
 map <C-J> <C-W>j
