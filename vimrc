@@ -33,6 +33,9 @@ set listchars=tab:>-,trail:·
 set list
 nmap <silent> <leader>s :set nolist!<CR>
 
+" Load matchit (% to bounce from do to end, etc.)
+runtime! macros/matchit.vim
+
 " Fix tabs
 filetype plugin indent on
 set tabstop=2
