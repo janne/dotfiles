@@ -66,7 +66,8 @@ map <C-H> <C-W>h
 map <C-L> <C-W>l
 
 " FuzzyFinder plugin
-let g:fuzzy_matching_limit=30
+let g:fuzzy_ignore = "*.log"
+let g:fuzzy_matching_limit = 70
 if has("ruby")
   map <leader>t :FuzzyFinderTextMate<CR>
 else
