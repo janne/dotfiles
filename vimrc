@@ -31,7 +31,8 @@ syntax on
 " Catch trailing whitespace
 set listchars=tab:>-,trail:·
 set list
-nmap <silent> <leader>s :set nolist!<CR>
+nmap <silent> <leader>s :set nolist!<cr>
+nmap <silent> <leader>d :retab<cr>:%s/\s\+$//<cr>
 
 " Load matchit (% to bounce from do to end, etc.)
 runtime! macros/matchit.vim
@@ -76,8 +77,6 @@ end
 
 " Rails plugin
 nmap <leader>f :Rfind<space>
-nmap <leader>c :Rscript console<CR>
-nmap <leader>d :Rscript dbconsole<CR>
 
 " NERDTree plugin
 nmap <leader>n :NERDTreeToggle<CR>
