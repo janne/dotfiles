@@ -31,8 +31,8 @@ syntax on
 " Catch trailing whitespace
 set listchars=tab:>-,trail:·
 set list
-nmap <silent> <leader>s :set nolist!<cr>
-nmap <silent> <leader>d :retab<cr>:%s/\s\+$//<cr>
+nmap <leader>s :set nolist!<cr>
+nmap <leader>d :retab<cr>:%s/\s\+$//e<cr>:%s/\sand\s/ \&\& /e<cr>:%s/\sor\s/ \|\| /e<cr>:%s/\snot\s/ !/e<cr>gg
 
 " Load matchit (% to bounce from do to end, etc.)
 runtime! macros/matchit.vim
