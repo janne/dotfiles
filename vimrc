@@ -59,17 +59,8 @@ set autoindent
 " Fix no break space
 imap <M-Space> <space>
 
-" Fix cmd+1, cmd+2 etc
-nmap <D-1> 1gt
-imap <D-1> <esc>1gt
-nmap <D-2> 2gt
-imap <D-2> <esc>2gt
-nmap <D-3> 3gt
-imap <D-3> <esc>3gt
-nmap <D-4> 4gt
-imap <D-4> <esc>4gt
-nmap <D-5> 5gt
-imap <D-5> <esc>5gt
+map <silent> <C-p> :tabprevious<CR>
+map <silent> <C-n> :tabnext<CR>
 
 " Window mappings
 map <C-J> <C-W>j
