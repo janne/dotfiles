@@ -28,6 +28,17 @@ nmap <silent> <leader>h :silent :nohlsearch<CR>
 " Syntax highlight
 syntax on
 
+" Ease of use keyboard mappings
+map H ^
+map L $
+
+" Buffer switching/management, might as well use those keys for something useful
+map <Right> :bnext<CR>
+imap <Right> <ESC>:bnext<CR>
+map <Left> :bprev<CR>
+imap <Left> <ESC>:bprev<CR>
+map <Del> :bd<CR>
+
 " Catch trailing whitespace
 set listchars=tab:>-,trail:·
 set list
