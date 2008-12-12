@@ -29,8 +29,11 @@ nmap <silent> <leader>h :silent :nohlsearch<CR>
 syntax on
 
 " Ease of use keyboard mappings
-map H ^
-map L $
+nmap H ^
+nmap L $
+nmap <Space> <C-f>
+nmap <S-Space> <C-b>
+
 
 " Buffer switching/management, might as well use those keys for something useful
 map <Right> :bnext<CR>
@@ -61,6 +64,11 @@ imap <M-Space> <space>
 
 map <silent> <C-p> :tabprevious<CR>
 map <silent> <C-n> :tabnext<CR>
+map <silent> g0 1gt
+map <silent> g1 2gt
+map <silent> g2 3gt
+map <silent> g3 4gt
+map <silent> g4 5gt
 
 " Window mappings
 map <C-J> <C-W>j
