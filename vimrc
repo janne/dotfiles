@@ -28,6 +28,14 @@ nmap <silent> <leader>h :silent :nohlsearch<CR>
 " Syntax highlight
 syntax on
 
+" Fix key mappings in command mode
+cnoremap <C-A> <Home>
+cnoremap <C-E> <End>
+cnoremap <C-F> <Right>
+cnoremap <C-B> <Left>
+cnoremap <C-D> <Del>
+cnoremap <C-K> <C-E><C-U>
+
 " Ease of use keyboard mappings
 nmap H ^
 nmap L $
