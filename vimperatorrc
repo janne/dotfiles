@@ -1,3 +1,4 @@
 let mapleader = ","
 map <leader>h :nohlsearch<CR>
 au LocationChange .* js modes.passAllKeys = /(google\.com|rememberthemilk.com)/.test(buffer.URL)
+set editor='bash -lc "mvim -f \$*" mvim '
