@@ -1,7 +1,3 @@
 let mapleader = ","
 map <leader>h :nohlsearch<CR>
-map g1 2gt
-map g2 3gt
-map g3 4gt
-map g4 5gt
 au LocationChange .* js modes.passAllKeys = /(google\.com|rememberthemilk.com)/.test(buffer.URL)
