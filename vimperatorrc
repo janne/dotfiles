@@ -4,3 +4,7 @@ au LocationChange .* js modes.passAllKeys = /(google\.com|rememberthemilk.com)/.
 set editor='bash -lc "mvim -f \$*" mvim '
 noremap <Left> H
 noremap <Right> L
+noremap < [[
+noremap > ]]
+nextpattern+=\bNästa\b
+previouspattern+=\bFöregående\b
