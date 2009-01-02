@@ -42,6 +42,8 @@ nmap L $
 nmap <Space> <C-f>
 nmap <S-Space> <C-b>
 
+" Bind control-l to hashrocket
+imap <C-l> <Space>=><Space>
 
 " Buffer switching/management, might as well use those keys for something useful
 map <Right> :bnext<CR>
