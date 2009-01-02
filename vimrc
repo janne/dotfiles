@@ -74,11 +74,15 @@ imap <M-Space> <space>
 
 map <silent> <C-p> :tabprevious<CR>
 map <silent> <C-n> :tabnext<CR>
-map <silent> g0 1gt
-map <silent> g1 2gt
-map <silent> g2 3gt
-map <silent> g3 4gt
-map <silent> g4 5gt
+map <D-1> :tabnext 1<CR>
+map <D-2> :tabnext 2<CR>
+map <D-3> :tabnext 3<CR>
+map <D-4> :tabnext 4<CR>
+map <D-5> :tabnext 5<CR>
+map <D-6> :tabnext 6<CR>
+map <D-7> :tabnext 7<CR>
+map <D-8> :tabnext 8<CR>
+map <D-9> :tabnext 9<CR>
 
 " Window mappings
 map <C-J> <C-W>j
