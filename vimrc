@@ -100,6 +100,5 @@ nmap <leader>f :Rfind<space>
 nmap <leader>n :NERDTreeToggle<CR>
 
 " Ack plugin
-nmap <leader>a :call Ack()<cr>
-nmap <leader>w :call Ack(expand("<cword>"))<cr>
+nmap <leader>a :Ack<space>
 
