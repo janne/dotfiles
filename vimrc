@@ -28,6 +28,23 @@ nmap <silent> <leader>h :silent :nohlsearch<CR>
 " Syntax highlight
 syntax on
 
+" Fix tabs
+filetype plugin indent on
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+set autoindent
+
+" GUI settings
+if has("gui_macvim")
+  set columns=140
+  set lines=40
+  set guifont=Monaco:h12
+  set guioptions-=T
+  colorscheme molokai
+endif
+
 " Fix key mappings in command mode
 cnoremap <C-A> <Home>
 cnoremap <C-E> <End>
@@ -60,14 +77,6 @@ nmap <leader>d :retab<cr>:%s/\s\+$//e<cr>:%s/\sand\s/ \&\& /e<cr>:%s/\sor\s/ \|\
 
 " Load matchit (% to bounce from do to end, etc.)
 runtime! macros/matchit.vim
-
-" Fix tabs
-filetype plugin indent on
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-set expandtab
-set autoindent
 
 " Fix no break space
 imap <M-Space> <space>
