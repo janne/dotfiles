@@ -119,7 +119,7 @@ else
    hi CursorLine                    guibg=#293739
    hi CursorColumn                  guibg=#293739
    hi LineNr          guifg=#BCBCBC guibg=#232526
-   hi NonText         guifg=#BCBCBC guibg=#232526
+   hi NonText         guifg=#BCBCBC guibg=#1B1D1E
 end
 
 "
