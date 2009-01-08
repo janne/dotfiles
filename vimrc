@@ -81,8 +81,10 @@ runtime! macros/matchit.vim
 " Fix no break space
 imap <M-Space> <space>
 
-map <silent> <C-p> :tabprevious<CR>
-map <silent> <C-n> :tabnext<CR>
+" Remap jump to tag
+map <silent> <C-p> <C-]>
+
+" Tab switching
 map <D-1> :tabnext 1<CR>
 map <D-2> :tabnext 2<CR>
 map <D-3> :tabnext 3<CR>
