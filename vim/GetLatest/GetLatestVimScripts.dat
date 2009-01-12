@@ -1,9 +1,0 @@
-ScriptID SourceID Filename
---------------------------
-1218 1 :AutoInstall: NERD_commenter.vim
-1658 1 :AutoInstall: NERD_tree.vim
-1318 1 :AutoInstall: snippetsEmu.vim
-1984 1 :AutoInstall: fuzzyfinder.vim
-2423 1 :AutoInstall: gist.vim
-1567 1 :AutoInstall: rails.vim
-1697 1 :AutoInstall: surround.vim
