@@ -8,6 +8,9 @@ set number
 " Show ruler
 set ruler
 
+" Read file when changed outside of Vim
+set autoread
+
 " Swap ` and '
 nnoremap ' `
 nnoremap ` '
