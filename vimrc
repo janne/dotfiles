@@ -45,6 +45,7 @@ if has("gui_macvim")
   set lines=40
   set guifont=Monaco:h12
   set guioptions-=T
+  set fuoptions=maxvert,maxhorz
   colorscheme molokai
 endif
 
