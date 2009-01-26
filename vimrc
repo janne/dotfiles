@@ -98,6 +98,15 @@ map <D-6> :tabnext 6<CR>
 map <D-7> :tabnext 7<CR>
 map <D-8> :tabnext 8<CR>
 map <D-9> :tabnext 9<CR>
+imap <D-1> <ESC>:tabnext 1<CR>
+imap <D-2> <ESC>:tabnext 2<CR>
+imap <D-3> <ESC>:tabnext 3<CR>
+imap <D-4> <ESC>:tabnext 4<CR>
+imap <D-5> <ESC>:tabnext 5<CR>
+imap <D-6> <ESC>:tabnext 6<CR>
+imap <D-7> <ESC>:tabnext 7<CR>
+imap <D-8> <ESC>:tabnext 8<CR>
+imap <D-9> <ESC>:tabnext 9<CR>
 
 " Window mappings
 map <C-J> <C-W>j
