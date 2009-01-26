@@ -123,3 +123,5 @@ nmap <leader>n :NERDTreeToggle<CR>
 " Ack plugin
 nmap <leader>a :Ack<space>
 
+" Txt filetype
+au BufRead,BufNewFile *  setfiletype txt 
