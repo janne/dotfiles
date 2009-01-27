@@ -2,6 +2,7 @@
   co = checkout
   ci = commit
   st = status
+  graph = log --graph --pretty=oneline --abbrev-commit --all --decorate
 
 [user]
   email = YOUR.EMAIL@company.com
