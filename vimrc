@@ -116,12 +116,8 @@ map <C-L> <C-W>l
 
 " FuzzyFinder plugin
 let g:fuzzy_ignore = "*.log"
-let g:fuzzy_matching_limit = 70
-if has("ruby")
-  map <leader>t :FuzzyFinderTextMate<CR>
-else
-  map <leader>t :FuzzyFinderFile<CR>
-end
+map <leader>t :FuzzyFinderFile<CR>
+map <leader>d :FuzzyFinderDir<CR>
 
 " Rails plugin
 nmap <leader>f :Rfind<space>
