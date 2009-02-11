@@ -11,6 +11,3 @@ ls="ls -h"
 # Git scripts
 source ~/.git_prompt.sh
 source ~/.git_completion.sh
-
-# Use vi input mode in bash
-set -o vi
