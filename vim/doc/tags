@@ -27,6 +27,7 @@
 'NERDTreeShowHidden'	NERD_tree.txt	/*'NERDTreeShowHidden'*
 'NERDTreeShowLineNumbers'	NERD_tree.txt	/*'NERDTreeShowLineNumbers'*
 'NERDTreeSortOrder'	NERD_tree.txt	/*'NERDTreeSortOrder'*
+'NERDTreeStatusline'	NERD_tree.txt	/*'NERDTreeStatusline'*
 'NERDTreeWinPos'	NERD_tree.txt	/*'NERDTreeWinPos'*
 'NERDTreeWinSize'	NERD_tree.txt	/*'NERDTreeWinSize'*
 'NERDUsePlaceHolders'	NERD_commenter.txt	/*'NERDUsePlaceHolders'*
@@ -96,12 +97,14 @@ NERDTree-e	NERD_tree.txt	/*NERDTree-e*
 NERDTree-f	NERD_tree.txt	/*NERDTree-f*
 NERDTree-gi	NERD_tree.txt	/*NERDTree-gi*
 NERDTree-go	NERD_tree.txt	/*NERDTree-go*
+NERDTree-gs	NERD_tree.txt	/*NERDTree-gs*
 NERDTree-i	NERD_tree.txt	/*NERDTree-i*
 NERDTree-m	NERD_tree.txt	/*NERDTree-m*
 NERDTree-o	NERD_tree.txt	/*NERDTree-o*
 NERDTree-p	NERD_tree.txt	/*NERDTree-p*
 NERDTree-q	NERD_tree.txt	/*NERDTree-q*
 NERDTree-r	NERD_tree.txt	/*NERDTree-r*
+NERDTree-s	NERD_tree.txt	/*NERDTree-s*
 NERDTree-t	NERD_tree.txt	/*NERDTree-t*
 NERDTree-u	NERD_tree.txt	/*NERDTree-u*
 NERDTree-x	NERD_tree.txt	/*NERDTree-x*
