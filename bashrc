@@ -11,3 +11,6 @@ ls="ls -h"
 # Git scripts
 source ~/.git_prompt.sh
 source ~/.git_completion.sh
+
+# j
+source ~/.j.sh
