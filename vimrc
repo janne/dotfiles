@@ -129,5 +129,19 @@ nmap <leader>n :NERDTreeToggle<CR>
 " Ack plugin
 nmap <leader>a :Ack<space>
 
+" Open the Ruby ApiDock page for the word under cursor, in a new Firefox tab
+function! OpenRubyDoc(keyword)
+  let url = 'http://apidock.com/ruby/'.a:keyword
+  exec '!open '.url
+endfunction
+noremap RB :call OpenRubyDoc(expand('<cword>'))<CR>
+
+" Open the Rails ApiDock page for the word under cursos, in a new Firefox tab
+function! OpenRailsDoc(keyword)
+  let url = 'http://apidock.com/rails/'.a:keyword
+  exec '!open '.url
+endfunction
+noremap RR :call OpenRailsDoc(expand('<cword>'))<CR>
+
 " Txt filetype
 au BufRead,BufNewFile *  setfiletype txt 
