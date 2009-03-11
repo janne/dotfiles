@@ -25,6 +25,11 @@ set smartcase
 set gdefault
 set hlsearch
 
+" Folding
+set foldmethod=syntax
+set foldnestmax=2
+set nofoldenable
+
 " Switch off hlsearch temporarily
 nmap <silent> <leader>h :silent :nohlsearch<CR>
 
