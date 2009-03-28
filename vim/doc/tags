@@ -31,6 +31,7 @@
 'NERDTreeWinPos'	NERD_tree.txt	/*'NERDTreeWinPos'*
 'NERDTreeWinSize'	NERD_tree.txt	/*'NERDTreeWinSize'*
 'NERDUsePlaceHolders'	NERD_commenter.txt	/*'NERDUsePlaceHolders'*
+'TailMinusF_Height'	tailminusf.txt	/*'TailMinusF_Height'*
 'loaded_nerd_comments'	NERD_commenter.txt	/*'loaded_nerd_comments'*
 'loaded_nerd_tree'	NERD_tree.txt	/*'loaded_nerd_tree'*
 'snippets'	snipMate.txt	/*'snippets'*
@@ -44,6 +45,7 @@
 :NERDTreeFromBookmark	NERD_tree.txt	/*:NERDTreeFromBookmark*
 :NERDTreeMirror	NERD_tree.txt	/*:NERDTreeMirror*
 :NERDTreeToggle	NERD_tree.txt	/*:NERDTreeToggle*
+:Tail	tailminusf.txt	/*:Tail*
 ExtractSnips()	snipMate.txt	/*ExtractSnips()*
 Filename()	snipMate.txt	/*Filename()*
 GlobalSnip	snipMate.txt	/*GlobalSnip*
@@ -137,6 +139,7 @@ NERD_tree.txt	NERD_tree.txt	/*NERD_tree.txt*
 ResetSnips()	snipMate.txt	/*ResetSnips()*
 Snipp	snipMate.txt	/*Snipp*
 Snipp!	snipMate.txt	/*Snipp!*
+TailMinusF.txt	tailminusf.txt	/*TailMinusF.txt*
 [%	matchit.txt	/*[%*
 ]%	matchit.txt	/*]%*
 ack	ack.txt	/*ack*
@@ -385,6 +388,9 @@ surround-mappings	surround.txt	/*surround-mappings*
 surround-replacements	surround.txt	/*surround-replacements*
 surround-targets	surround.txt	/*surround-targets*
 surround.txt	surround.txt	/*surround.txt*
+tailminusf-about	tailminusf.txt	/*tailminusf-about*
+tailminusf-commands	tailminusf.txt	/*tailminusf-commands*
+tailminusf-configure	tailminusf.txt	/*tailminusf-configure*
 v_[%	matchit.txt	/*v_[%*
 v_]%	matchit.txt	/*v_]%*
 v_a%	matchit.txt	/*v_a%*
