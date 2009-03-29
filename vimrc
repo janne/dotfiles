@@ -127,6 +127,7 @@ map <leader>d :FuzzyFinderDir<CR>
 
 " Rails plugin
 nmap <leader>f :Rfind<space>
+autocmd User Rails		silent! Rlcd
 
 " NERDTree plugin
 nmap <leader>n :NERDTreeToggle<CR>
