@@ -48,8 +48,7 @@ set autoindent
 if has("gui_macvim")
   set columns=140
   set lines=40
-  " http://www.ms-studio.com/FontSales/anonymous.html
-  set guifont=Anonymous:h11
+  set guifont=Monaco:h12
   set guioptions-=T
   set fuoptions=maxvert,maxhorz
   colorscheme molokai
