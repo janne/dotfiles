@@ -125,13 +125,19 @@ map <leader>t :FuzzyFinderFile<CR>
 map <leader>d :FuzzyFinderDir<CR>
 
 " Rails plugin
+autocmd User Rails		silent! Rlcd
 map RF :Rfind<space>
 map RC :Rcontroller<space>
 map RM :Rmodel<space>
 map RV :Rview<space>
 map RL :Rlayout<space>
 map RH :Rhelper<space>
-autocmd User Rails		silent! Rlcd
+map RSF :RSfind<space>
+map RSC :RScontroller<space>
+map RSM :RSmodel<space>
+map RSV :RSview<space>
+map RSL :RSlayout<space>
+map RSH :RShelper<space>
 
 " NERDTree plugin
 nmap <leader>n :NERDTreeToggle<CR>
