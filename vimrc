@@ -122,21 +122,20 @@ map <C-H> <C-W>h
 map <C-L> <C-W>l
 
 " Rails plugin
-autocmd User Rails		silent! Rlcd
-map RF :Rfind<space>
-map RC :Rcontroller<space>
-map RM :Rmodel<space>
-map RV :Rview<space>
-map RL :Rlayout<space>
-map RH :Rhelper<space>
-map RT :Rstylesheet<space>
-map RSF :RSfind<space>
-map RSC :RScontroller<space>
-map RSM :RSmodel<space>
-map RSV :RSview<space>
-map RSL :RSlayout<space>
-map RSH :RShelper<space>
-map RST :RSstylesheet<space>
+autocmd User Rails    silent! Rlcd
+autocmd User Rails    silent! Rnavcommand locale config/locales -default=en -suffix=.yml -glob=**
+map <leader>f :Rfind<space>
+map <leader>c :Rcontroller<space>
+map <leader>m :Rmodel<space>
+map <leader>v :Rview<space>
+map <leader>l :Rlocale<space>
+map <leader>t :Rstylesheet<space>
+map <leader>sf :RSfind<space>
+map <leader>sc :RScontroller<space>
+map <leader>sm :RSmodel<space>
+map <leader>sv :RSview<space>
+map <leader>sl :RSlocale<space>
+map <leader>st :RSstylesheet<space>
 
 " NERDTree plugin
 nmap <leader>n :NERDTreeToggle<CR>
