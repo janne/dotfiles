@@ -81,8 +81,10 @@ map <Del> :bd<CR>
 " Catch trailing whitespace
 set listchars=tab:>-,trail:·
 set list
-nmap <leader>s :set nolist!<cr>
-nmap <leader>d :retab<cr>:%s/\s\+$//e<cr>:%s/\sand\s/ \&\& /e<cr>:%s/\sor\s/ \|\| /e<cr>:%s/\snot\s/ !/e<cr>gg
+function! Cleanup()
+  exec 'retab'
+  exec ':%s/\s\+$//e'
+endfunction
 
 " Load matchit (% to bounce from do to end, etc.)
 runtime! macros/matchit.vim
