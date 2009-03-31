@@ -132,12 +132,14 @@ map RM :Rmodel<space>
 map RV :Rview<space>
 map RL :Rlayout<space>
 map RH :Rhelper<space>
+map RT :Rstylesheet<space>
 map RSF :RSfind<space>
 map RSC :RScontroller<space>
 map RSM :RSmodel<space>
 map RSV :RSview<space>
 map RSL :RSlayout<space>
 map RSH :RShelper<space>
+map RST :RSstylesheet<space>
 
 " NERDTree plugin
 nmap <leader>n :NERDTreeToggle<CR>
