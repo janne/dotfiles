@@ -121,11 +121,6 @@ map <C-K> <C-W>k
 map <C-H> <C-W>h
 map <C-L> <C-W>l
 
-" FuzzyFinder plugin
-let g:fuzzy_ignore = "*.log"
-map <leader>t :FuzzyFinderFile<CR>
-map <leader>d :FuzzyFinderDir<CR>
-
 " Rails plugin
 autocmd User Rails		silent! Rlcd
 map RF :Rfind<space>
