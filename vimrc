@@ -72,9 +72,12 @@ map <Del> :bd<CR>
 set listchars=tab:>-,trail:·
 set list
 function! Cleanup()
+  exec 'normal ma'
   exec 'retab'
-  exec ':%s/\s\+$//e'
+  exec '%substitute/\s\+$//e'
+  exec 'normal `a'
 endfunction
+map <leader>p :call Cleanup()<CR>
 
 " Load matchit (% to bounce from do to end, etc.)
 runtime! macros/matchit.vim
