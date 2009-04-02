@@ -62,12 +62,6 @@ cnoremap <C-B> <Left>
 cnoremap <C-D> <Del>
 cnoremap <C-K> <C-E><C-U>
 
-" Ease of use keyboard mappings
-nmap H ^
-nmap L $
-nmap <Space> <C-f>
-nmap <S-Space> <C-b>
-
 " Bind control-l to hashrocket
 imap <C-l> <Space>=><Space>
 
