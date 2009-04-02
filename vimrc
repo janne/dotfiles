@@ -11,10 +11,6 @@ set ruler
 " Read file when changed outside of Vim
 set autoread
 
-" Swap ` and '
-nnoremap ' `
-nnoremap ` '
-
 " Change leader
 let mapleader = ","
 
