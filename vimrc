@@ -88,6 +88,9 @@ imap <M-Space> <space>
 " Remap jump to tag
 map <silent> <C-p> <C-]>
 
+" Edit previously edited file
+map <silent> <C-t> <C-^>
+
 " Tab switching
 map <D-1> :tabnext 1<CR>
 map <D-2> :tabnext 2<CR>
