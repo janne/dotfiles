@@ -5,9 +5,6 @@ export LC_CTYPE=sv_SE.UTF-8
 export CLICOLOR=1
 export EDITOR="mvim -f"
 
-# Aliases
-ls="ls -h"
-
 # Git scripts
 source ~/.git_prompt.sh
 source ~/.git_completion.sh
@@ -18,6 +15,9 @@ if [ -f ~/init/* ]; then
     source $f
   done
 fi
+
+# vim less
+alias less="~/.less.sh"
 
 # j
 source ~/.j.sh
