@@ -120,18 +120,33 @@ map <C-L> <C-W>l
 " Rails plugin
 autocmd User Rails    silent! Rlcd
 autocmd User Rails    silent! Rnavcommand locale config/locales -default=en -suffix=.yml -glob=**
-map <leader>f :Rfind<space>
-map <leader>c :Rcontroller<space>
-map <leader>m :Rmodel<space>
-map <leader>v :Rview<space>
-map <leader>l :Rlocale<space>
-map <leader>t :Rstylesheet<space>
-map <leader>sf :RSfind<space>
-map <leader>sc :RScontroller<space>
-map <leader>sm :RSmodel<space>
-map <leader>sv :RSview<space>
-map <leader>sl :RSlocale<space>
-map <leader>st :RSstylesheet<space>
+map <C-k>a :Rlayout<space>
+map <C-k>b :Rlib<space>
+map <C-k>c :Rcontroller<space>
+map <C-k>e :Renvironment<space>
+map <C-k>f :Rfind<space>
+map <C-k>i :Rmigration<space>
+map <C-k>j :Rjavascript<space>
+map <C-k>l :Rlocale<space>
+map <C-k>m :Rmodel<space>
+map <C-k>p :Rplugin<space>
+map <C-k>s :Rtask<space>
+map <C-k>t :Rstylesheet<space>
+map <C-k>v :Rview<space>
+
+map <C-k>sa :RSlayout<space>
+map <C-k>sb :RSlib<space>
+map <C-k>sc :RScontroller<space>
+map <C-k>se :RSenvironment<space>
+map <C-k>sf :RSfind<space>
+map <C-k>si :RSmigration<space>
+map <C-k>sj :RSjavascript<space>
+map <C-k>sl :RSlocale<space>
+map <C-k>sm :RSmodel<space>
+map <C-k>sp :RSplugin<space>
+map <C-k>ss :RStask<space>
+map <C-k>st :RSstylesheet<space>
+map <C-k>sv :RSview<space>
 
 " NERDTree plugin
 nmap <leader>n :NERDTreeToggle<CR>
