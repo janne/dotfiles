@@ -69,7 +69,7 @@ imap <Left> <ESC>:bprev<CR>
 map <Del> :bd<CR>
 
 " Catch trailing whitespace
-set listchars=tab:>-,trail:·
+set listchars=tab:>-,trail:·,nbsp:»
 set list
 function! Cleanup()
   exec 'normal ma'
@@ -81,9 +81,6 @@ map <leader>p :call Cleanup()<CR>
 
 " Load matchit (% to bounce from do to end, etc.)
 runtime! macros/matchit.vim
-
-" Fix no break space
-imap <M-Space> <space>
 
 " Remap jump to tag
 map <silent> <C-p> <C-]>
