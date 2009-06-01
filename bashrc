@@ -16,8 +16,5 @@ if [ -f ~/init/* ]; then
   done
 fi
 
-# vim less
-alias less="~/.less.sh"
-
 # j
 source ~/.j.sh
