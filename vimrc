@@ -124,6 +124,7 @@ map <C-k>e :Renvironment<space>
 map <C-k>f :Rfind<space>
 map <C-k>i :Rmigration<space>
 map <C-k>j :Rjavascript<space>
+map <C-k>k :Rtask<space>
 map <C-k>l :Rlocale<space>
 map <C-k>m :Rmodel<space>
 map <C-k>p :Rplugin<space>
@@ -138,6 +139,7 @@ map <C-k>se :RSenvironment<space>
 map <C-k>sf :RSfind<space>
 map <C-k>si :RSmigration<space>
 map <C-k>sj :RSjavascript<space>
+map <C-k>sk :RStask<space>
 map <C-k>sl :RSlocale<space>
 map <C-k>sm :RSmodel<space>
 map <C-k>sp :RSplugin<space>
