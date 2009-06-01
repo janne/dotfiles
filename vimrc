@@ -108,12 +108,6 @@ imap <D-7> <ESC>:tabnext 7<CR>
 imap <D-8> <ESC>:tabnext 8<CR>
 imap <D-9> <ESC>:tabnext 9<CR>
 
-" Window mappings
-map <C-J> <C-W>j
-map <C-K> <C-W>k
-map <C-H> <C-W>h
-map <C-L> <C-W>l
-
 " Rails plugin
 autocmd User Rails    silent! Rlcd
 autocmd User Rails    silent! Rnavcommand locale config/locales -default=en -suffix=.yml -glob=**
