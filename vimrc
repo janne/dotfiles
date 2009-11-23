@@ -88,6 +88,13 @@ map <silent> <C-p> <C-]>
 " Edit previously edited file
 map <silent> <C-t> <C-^>
 
+" Underline with = / - with F5 / F6
+nnoremap <F5> yyp<c-v>$r=
+inoremap <F5> <Esc>yyp<c-v>$r=A
+nnoremap <F6> yyp<c-v>$r-
+inoremap <F6> <Esc>yyp<c-v>$r-A
+
+
 " Tab switching
 map <D-1> :tabnext 1<CR>
 map <D-2> :tabnext 2<CR>
