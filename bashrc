@@ -6,12 +6,9 @@ export CLICOLOR=1
 export EDITOR="mvim -f"
 
 # Git scripts
-source ~/.git_prompt.sh
-source ~/.git_completion.sh
+source ~/.bash/git_prompt.sh
+source ~/.bash/git_completion.sh
 
-# Source all files in ~/init
-if [ -f ~/init/* ]; then
-  for f in ~/init/*; do
-    source $f
-  done
+if [ -f ~/.localrc ]; then
+  source ~/.localrc
 fi
