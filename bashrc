@@ -15,6 +15,3 @@ if [ -f ~/init/* ]; then
     source $f
   done
 fi
-
-# j
-source ~/.j.sh
