@@ -1,8 +1,7 @@
-source ~/.bash/config
 source ~/.bash/paths
-source ~/.bash/git_prompt
+source ~/.bash/parse_git_branch
 source ~/.bash/git_completion
+source ~/.bash/config
 
-if [ -f ~/.localrc ]; then
-  source ~/.localrc
-fi
+# use .localrc for settings specific to one system
+[[ -f ~/.localrc ]] && source ~/.localrc
