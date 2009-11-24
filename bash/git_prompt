@@ -12,6 +12,12 @@ case $TERM in
   ;;
 esac
 
-PS1="${TITLEBAR}\w\$(parse_git_branch)\$ "
+
+if [[ -n $SSH_CONNECTION ]]; then
+  PS1="\h:\w\$(parse_git_branch)\$ "
+else
+  PS1="${TITLEBAR}\w\$(parse_git_branch)\$ "
+fi
+
 PS2='> '
 PS4='+ '
