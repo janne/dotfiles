@@ -168,5 +168,5 @@ function! OpenRailsDoc(keyword)
 endfunction
 noremap RR :call OpenRailsDoc(expand('<cword>'))<CR>
 
-" Txt filetype
-au BufRead,BufNewFile *  setfiletype txt 
+" Filetypes
+au BufRead,BufNewFile *.md,*.mkd set filetype=markdown
