@@ -4,7 +4,7 @@ else
   PS1='%3~$(git_info_for_prompt)%# '
 fi
 
-export EDITOR='mvim -f'
+export EDITOR=vim
 
 fpath=(~/.zsh/functions $fpath)
 
