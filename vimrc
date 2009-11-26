@@ -11,10 +11,6 @@ set ruler
 " Read file when changed outside of Vim
 set autoread
 
-" Swap ` and '
-nnoremap ' `
-nnoremap ` '
-
 " Change leader
 let mapleader = ","
 
@@ -62,12 +58,6 @@ cnoremap <C-B> <Left>
 cnoremap <C-D> <Del>
 cnoremap <C-K> <C-E><C-U>
 
-" Ease of use keyboard mappings
-nmap H ^
-nmap L $
-nmap <Space> <C-f>
-nmap <S-Space> <C-b>
-
 " Bind control-l to hashrocket
 imap <C-l> <Space>=><Space>
 
@@ -79,21 +69,31 @@ imap <Left> <ESC>:bprev<CR>
 map <Del> :bd<CR>
 
 " Catch trailing whitespace
-set listchars=tab:>-,trail:·
+set listchars=tab:>-,trail:·,nbsp:»
 set list
 function! Cleanup()
+  exec 'normal ma'
   exec 'retab'
-  exec ':%s/\s\+$//e'
+  exec '%substitute/\s\+$//e'
+  exec 'normal `a'
 endfunction
+map <leader>p :call Cleanup()<CR>
 
 " Load matchit (% to bounce from do to end, etc.)
 runtime! macros/matchit.vim
 
-" Fix no break space
-imap <M-Space> <space>
-
 " Remap jump to tag
 map <silent> <C-p> <C-]>
+
+" Edit previously edited file
+map <silent> <C-t> <C-^>
+
+" Underline with = / - with F5 / F6
+nnoremap <F5> yyp<c-v>$r=
+inoremap <F5> <Esc>yyp<c-v>$r=A
+nnoremap <F6> yyp<c-v>$r-
+inoremap <F6> <Esc>yyp<c-v>$r-A
+
 
 " Tab switching
 map <D-1> :tabnext 1<CR>
@@ -115,27 +115,38 @@ imap <D-7> <ESC>:tabnext 7<CR>
 imap <D-8> <ESC>:tabnext 8<CR>
 imap <D-9> <ESC>:tabnext 9<CR>
 
-" Window mappings
-map <C-J> <C-W>j
-map <C-K> <C-W>k
-map <C-H> <C-W>h
-map <C-L> <C-W>l
-
 " Rails plugin
 autocmd User Rails    silent! Rlcd
 autocmd User Rails    silent! Rnavcommand locale config/locales -default=en -suffix=.yml -glob=**
-map <leader>f :Rfind<space>
-map <leader>c :Rcontroller<space>
-map <leader>m :Rmodel<space>
-map <leader>v :Rview<space>
-map <leader>l :Rlocale<space>
-map <leader>t :Rstylesheet<space>
-map <leader>sf :RSfind<space>
-map <leader>sc :RScontroller<space>
-map <leader>sm :RSmodel<space>
-map <leader>sv :RSview<space>
-map <leader>sl :RSlocale<space>
-map <leader>st :RSstylesheet<space>
+map <C-k>a :Rlayout<space>
+map <C-k>b :Rlib<space>
+map <C-k>c :Rcontroller<space>
+map <C-k>e :Renvironment<space>
+map <C-k>f :Rfind<space>
+map <C-k>i :Rmigration<space>
+map <C-k>j :Rjavascript<space>
+map <C-k>k :Rtask<space>
+map <C-k>l :Rlocale<space>
+map <C-k>m :Rmodel<space>
+map <C-k>p :Rplugin<space>
+map <C-k>s :Rtask<space>
+map <C-k>t :Rstylesheet<space>
+map <C-k>v :Rview<space>
+
+map <C-k>sa :RSlayout<space>
+map <C-k>sb :RSlib<space>
+map <C-k>sc :RScontroller<space>
+map <C-k>se :RSenvironment<space>
+map <C-k>sf :RSfind<space>
+map <C-k>si :RSmigration<space>
+map <C-k>sj :RSjavascript<space>
+map <C-k>sk :RStask<space>
+map <C-k>sl :RSlocale<space>
+map <C-k>sm :RSmodel<space>
+map <C-k>sp :RSplugin<space>
+map <C-k>ss :RStask<space>
+map <C-k>st :RSstylesheet<space>
+map <C-k>sv :RSview<space>
 
 " NERDTree plugin
 nmap <leader>n :NERDTreeToggle<CR>
@@ -157,5 +168,5 @@ function! OpenRailsDoc(keyword)
 endfunction
 noremap RR :call OpenRailsDoc(expand('<cword>'))<CR>
 
-" Txt filetype
-au BufRead,BufNewFile *  setfiletype txt 
+" Filetypes
+au BufRead,BufNewFile *.md,*.mkd set filetype=markdown

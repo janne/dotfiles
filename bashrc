@@ -1,23 +1,7 @@
-# Exports
-export PATH="/usr/local/mysql/bin:~/bin:$PATH"
-export MANPATH="/usr/local/man:$MANPATH"
-export LC_CTYPE=sv_SE.UTF-8
-export CLICOLOR=1
-export EDITOR="mvim -f"
+source ~/.bash/paths.sh
+source ~/.bash/parse_git_branch.sh
+source ~/.bash/git_completion.sh
+source ~/.bash/config.sh
 
-# Aliases
-ls="ls -h"
-
-# Git scripts
-source ~/.git_prompt.sh
-source ~/.git_completion.sh
-
-# Source all files in ~/init
-if [ -f ~/init/* ]; then
-  for f in ~/init/*; do
-    source $f
-  done
-fi
-
-# j
-source ~/.j.sh
+# use .localrc for settings specific to one system
+[[ -f ~/.localrc ]] && source ~/.localrc
