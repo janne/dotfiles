@@ -68,9 +68,6 @@ map <Left> :bprev<CR>
 imap <Left> <ESC>:bprev<CR>
 map <Del> :bd<CR>
 
-" Catch trailing whitespace
-set listchars=tab:>-,trail:·,nbsp:»
-set list
 function! Cleanup()
   exec 'normal ma'
   exec 'retab'
