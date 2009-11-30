@@ -19,5 +19,6 @@ setopt CORRECT # Correct spelling of commands
 setopt NO_LIST_BEEP # Do not beep on ambiguous completion
 setopt PROMPT_SUBST # $ expansion etc. in prompts
 setopt EXTENDED_GLOB # Extended globbing
+setopt VI # Enable vi mode
 
 bindkey '^?' backward-delete-char
