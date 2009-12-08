@@ -1,27 +1,10 @@
-" Vim universal .txt syntax file
-" Language:     txt 1.2
-" Maintainer:   Tomasz Kalkosiński <spoonman@op.pl>
-" Last change:  3 Jan 2007
+" Vim universal .md syntax file
+" Language:     Markdown
+" Maintainer:   Jan Andersson <jan.andersson@gmail.com>
+" Last change:  8 Dec 2009
 "
-" This is an universal syntax script for all text documents, logs, changelogs, readmes
-" and all other strange and undetected filetypes.
-" The goal is to keep it very simple. It colors numbers, operators, signs,
-" cites, brackets, delimiters, comments, TODOs, errors, debug, changelog tags
-" and basic smileys ;]
+" An initial syntax file for John Gruber's Markdown.
 "
-" Changelog:
-" 1.2 (03-01-2007)
-"                       Add: Changelog tags: add, chg, fix, rem, del linked with Keyword
-"                       Add: note to txtTodo group
-"
-" 1.1 (01-07-2006)	Add: International cites
-" 			Chg: txtString color to Normal
-"	 		Chg: Simplified number coloring working better now
-"
-" 1.0 (28-04-2006)	Initial upload
-"
-" For version 5.x: Clear all syntax items
-" For version 6.x: Quit when a syntax file was already loaded
 if version < 600
   syntax clear
 elseif exists("b:current_syntax")
@@ -30,22 +13,12 @@ endif
 
 syn case ignore
 
-syn cluster txtAlwaysContains add=txtTodo,txtError
-
-syn cluster txtContains add=txtNumber,txtOperator,txtLink
-
-syn match txtOperator "[~\-_+*<>\[\]{}=|#@$%&\\/:&\^]"
-
-" Common strings
-syn match txtString "[[:alpha:]]" contains=txtOperator
-
-" Numbers
-"syn match txtNumber "\d\(\.\d\+\)\?"
-syn match txtNumber "\d"
+syn match mdOperator "[-=*]"
+syn match mdLink       "\(http\|https\|ftp\|ssh\|spotify\)\(\w\|[\-&=,?\:\.#\/]\)\+"
+syn match mdMail       "\(\w\|[!#$%&'*+-/=?^_`{|}~.]\)\+@\(\w\|[!#$%&'*+-/=?^_`{|}~.]\)\+"
 
 " Cites
-syn region txtCite      matchgroup=txtOperator  start="\""      end="\""        contains=@txtContains,@txtAlwaysContains
-
+syn region mdCite      matchgroup=mdOperator  start="\""      end="\""
 " utf8 international cites:
 " ‚ ’   U+201A (8218), U+2019 (8217)    Polish single quotation
 " „ ”   U+201E (8222), U+201d (8221)    Polish double quotation
@@ -53,36 +26,18 @@ syn region txtCite      matchgroup=txtOperator  start="\""      end="\""        
 " ‘ ’   U+2018 (8216), U+2019 (8217)    British quotes
 " „ “   U+201E (8222), U+2019 (8217)    German quotes
 " ‹ ›   U+2039 (8249), U+203A (8250)    French quotes
-syn region txtCite      matchgroup=txtOperator  start="[‚„«‘„‹]"        end="[’”»’“›]"  contains=@txtContains,@txtAlwaysContains
-
-syn region txtCite      matchgroup=txtOperator  start="\(\s\|^\)\@<='"  end="'"         contains=@txtContains,@txtAlwaysContains
+syn region mdCite      matchgroup=mdOperator  start="[‚„«‘„‹`]"        end="[’”»’“›`]"
+syn region mdCite      matchgroup=mdOperator  start="\(\s\|^\)\@<='"  end="'"
 
 " Comments
-syn region txtComment   start="("       end=")"         contains=@txtContains,txtCite,@txtAlwaysContains
-syn region txtComments  matchgroup=txtComments start="\/\/"     end="$"         contains=@txtAlwaysContains     oneline
-syn region txtComments  start="\/\*"    end="\*\/"      contains=@txtAlwaysContains
+syn region mdComments  matchgroup=mdComments start="\/\/"     end="$"           oneline
+syn region mdComments  start="\/\*"    end="\*\/"
 
-syn region txtDelims    matchgroup=txtOperator start="<"        end=">"         contains=@txtContains,@txtAlwaysContains oneline
-syn region txtDelims    matchgroup=txtOperator start="{"        end="}"         contains=@txtContains,@txtAlwaysContains oneline
-syn region txtDelims    matchgroup=txtOperator start="\["       end="\]"                contains=@txtContains,@txtAlwaysContains oneline 
-
-syn match txtLink       "\(http\|https\|ftp\)\(\w\|[\-&=,?\:\.\/]\)*"   contains=txtOperator
-
-" Basic smileys
-syn match txtSmile      "[:;=8][\-]\?\([(\/\\)\[\]]\+\|[OoPpDdFf]\+\)"
-
-" Changelog tags: add, chg, rem, fix
-syn match txtChangelogs         "\<add\>\s*:" contains=txtOperator
-syn match txtChangelogs         "\<chg\>\s*:" contains=txtOperator
-syn match txtChangelogs         "\<rem\>\s*:" contains=txtOperator
-syn match txtChangelogs         "\<del\>\s*:" contains=txtOperator
-syn match txtChangelogs         "\<fix\>\s*:" contains=txtOperator
-
-syn keyword txtTodo todo fixme xxx note
-
-syn keyword txtError error bug
-
-syn keyword txtDebug debug
+" Delims
+syn region mdDelims    matchgroup=mdOperator start="("        end=")"     contains=mdLink,mdMail    oneline
+syn region mdDelims    matchgroup=mdOperator start="<"        end=">"     contains=mdLink,mdMail    oneline
+syn region mdDelims    matchgroup=mdOperator start="{"        end="}"         oneline
+syn region mdDelims    matchgroup=mdOperator start="\["       end="\]"        oneline
 
 syn case match
 
@@ -95,21 +50,14 @@ syn case match
     command -nargs=+ HiLink hi def link <args>
   endif
 
-  HiLink txtNumber              Number
-  HiLink txtString              Normal
-  HiLink txtOperator            Operator
-  HiLink txtCite                String
-  HiLink txtComments            Comment
-  HiLink txtComment             Comment
-  HiLink txtDelims              Delimiter
-  HiLink txtLink                Special
-  HiLink txtSmile               PreProc
-  HiLink txtError               Error
-  HiLink txtTodo                Todo
-  HiLink txtDebug               Debug
-  HiLink txtChangelogs          Keyword
+  HiLink mdOperator            Operator
+  HiLink mdLink                Special
+  HiLink mdMail                Special
+  HiLink mdCite                String
+  HiLink mdComments            Comment
+  HiLink mdDelims              Delimiter
 
   delcommand HiLink
 
-let b:current_syntax = "txt"
+let b:current_syntax = "md"
 " vim: ts=8
