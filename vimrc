@@ -2,6 +2,8 @@ call pathogen#runtime_append_all_bundles()
 
 filetype plugin on
 
+runtime! macros/matchit.vim
+
 set tabstop=2
 set smarttab
 set shiftwidth=2
