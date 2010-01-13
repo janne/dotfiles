@@ -13,9 +13,16 @@ set expandtab
 set autoread
 set incsearch
 set ignorecase
+set linebreak
 
 " REST OF FILE CONTAINS MAPPINGS
 let mapleader = ","
+
+" Switch j/gj k/gk
+noremap j gj
+noremap gj j
+noremap k gk
+noremap gk k
 
 " Remap jump to tag
 map <silent> <C-p> <C-]>
