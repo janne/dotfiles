@@ -18,11 +18,17 @@ set linebreak
 " REST OF FILE CONTAINS MAPPINGS
 let mapleader = ","
 
-" Switch j/gj k/gk
+" Switch j/k/0/$/^ to g-alternative
 noremap j gj
 noremap gj j
 noremap k gk
 noremap gk k
+noremap 0 g0
+noremap g0 0
+noremap $ g$
+noremap g$ $
+noremap ^ g^
+noremap g^ ^
 
 " Remap jump to tag
 map <silent> <C-p> <C-]>
