@@ -5,3 +5,8 @@ source ~/.zsh/aliases.zsh
 
 # use .localrc for settings specific to one system
 [[ -f ~/.localrc ]] && source ~/.localrc
+
+if [ "$TERM" = "screen" ]; then
+echo "[ GNU Screen is activated ]"
+fi
+
