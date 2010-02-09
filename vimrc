@@ -1,6 +1,7 @@
 call pathogen#runtime_append_all_bundles()
 
 filetype plugin on
+syntax on
 
 runtime! macros/matchit.vim
 
