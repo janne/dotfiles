@@ -52,10 +52,10 @@ cnoremap <C-D> <Del>
 cnoremap <C-K> <C-E><C-U>
 
 " Underline with = / - with F5 / F6
-nnoremap <F5> yyp<c-v>$r=
-inoremap <F5> <Esc>yyp<c-v>$r=A
-nnoremap <F6> yyp<c-v>$r-
-inoremap <F6> <Esc>yyp<c-v>$r-A
+nnoremap gmu yyp<c-v>$r-
+inoremap gmu <Esc>yyp<c-v>$r-A
+nnoremap gmU yyp<c-v>$r=
+inoremap gmU <Esc>yyp<c-v>$r=A
 
 " Tab switching
 map <D-1> :tabnext 1<CR>
