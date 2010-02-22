@@ -1,1 +1,1 @@
-exec /usr/bin/screen -RR
+exec /usr/bin/screen -RR -U
