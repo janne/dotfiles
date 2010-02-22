@@ -40,6 +40,9 @@ map <silent> <C-t> <C-^>
 " NERDTree plugin
 nmap <leader>n :NERDTreeToggle<CR>
 
+" Rails plugin
+autocmd User Rails silent! Rlcd
+
 " Command mode
 cnoremap <C-A> <Home>
 cnoremap <C-E> <End>
