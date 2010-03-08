@@ -22,5 +22,6 @@ setopt EXTENDED_GLOB # Extended globbing
 setopt VI # Enable vi mode
 setopt SHARE_HISTORY # Share history between terminals
 setopt COMPLETE_IN_WORD # Complete inside words
+setopt VI # Enable vi mode
 
 bindkey '^?' backward-delete-char
