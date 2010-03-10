@@ -1,1 +1,1 @@
-au BufRead,BufNewFile *.md,*.mkd setlocal filetype=markdown
+au BufRead,BufNewFile *.md,*.mkd,*.txt setlocal filetype=markdown
