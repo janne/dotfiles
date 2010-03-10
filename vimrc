@@ -19,6 +19,9 @@ set linebreak
 " REST OF FILE CONTAINS MAPPINGS
 let mapleader = ","
 
+" Load todo.txt and done.txt
+nmap gt :e ~/Dropbox/Documents/todo.txt<CR>vl:e ~/Dropbox/Documents/done.txt<CR>h
+
 " Switch j/k/0/$/^ to g-alternative
 noremap j gj
 noremap gj j
