@@ -16,6 +16,9 @@ set incsearch
 set ignorecase
 set linebreak
 
+" ZenCoding
+let g:user_zen_expandabbr_key = '<c-e>'
+
 " REST OF FILE CONTAINS MAPPINGS
 let mapleader = ","
 
