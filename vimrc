@@ -16,6 +16,7 @@ set autoread
 set incsearch
 set ignorecase
 set linebreak
+set listchars=tab:▸\ ,eol:¬ " Use the same symbols as TextMate for tabstops and EOLs
 
 " ZenCoding
 let g:user_zen_expandabbr_key = '<c-e>'
