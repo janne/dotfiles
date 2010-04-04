@@ -1,4 +1,4 @@
-Tutorial of zencoding.vim
+Tutorial of zencoding.vim                                          *zencoding*
 
                                                     mattn <mattn.jp@gmail.com>
 
