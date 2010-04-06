@@ -1,13 +1,12 @@
 #!/usr/bin/env ruby
 
 git_bundles = [ 
-  "git://git.wincent.com/command-t.git",
   "git://github.com/tpope/vim-cucumber.git",
   "git://github.com/tpope/vim-endwise.git",
   "git://github.com/scrooloose/nerdtree.git",
   "git://github.com/tpope/vim-ragtag.git",
   "git://github.com/tpope/vim-rails.git",
-  "git://github.com/msanders/snipmate.vim",
+  "git://github.com/msanders/snipmate.vim.git",
   "git://github.com/tpope/vim-surround.git",
   "git://github.com/tpope/vim-vividchalk.git"
 ]
