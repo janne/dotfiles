@@ -25,3 +25,6 @@ git_bundles.each do |url|
   `git clone #{url} #{dir}`
   FileUtils.rm_rf(File.join(dir, ".git"))
 end
+
+# Update helptags
+`vim -c "call pathogen#helptags()" -c "quit" 2> /dev/null`
