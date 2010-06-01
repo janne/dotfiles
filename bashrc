@@ -1,8 +1,12 @@
 export PATH="/usr/local/bin:/usr/local/mysql/bin:~/bin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 export LC_CTYPE=sv_SE.UTF-8
-export CLICOLOR=1
 export EDITOR="vim"
+
+if [ -x /usr/bin/dircolors ]; then
+  test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+  alias ls='ls --color=auto'
+fi
 
 function parse_git_branch {
   BRANCH=$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1/")
