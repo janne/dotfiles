@@ -6,7 +6,7 @@ home = File.expand_path('~')
 
 files = Dir['*'].select{|file| 
   not (file == "install.sh" or
-  file == "README" or
+  file == "README.md" or
   file =~ /.template$/) 
 }
 files.each do |file|
