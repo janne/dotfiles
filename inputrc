@@ -1,1 +1,9 @@
 set editing-mode vi
+set keymap vi
+set convert-meta on
+
+# ^n cycle through the list of partial matches
+bind -m vi-insert "\C-n":menu-complete
+
+# ^l clear screen
+bind -m vi-insert "\C-l":clear-screen

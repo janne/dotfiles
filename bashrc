@@ -14,7 +14,10 @@ else
   PS1="\w\$(parse_git_branch)\$ "
 fi
 
+# VI key bindings
 set -o vi
+bind -m vi-insert "\C-n":menu-complete
+bind -m vi-insert "\C-l":clear-screen
 
 for c in `ls .completions`
   do source .completions/$c
