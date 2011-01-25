@@ -4,6 +4,7 @@ export LC_CTYPE=sv_SE.UTF-8
 export CLICOLOR=1
 export EDITOR="vim"
 export LSCOLORS=gxfxcxdxbxegedabagacad
+export TERM=xterm-256color
 
 function parse_git_branch {
   BRANCH=$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1/")
