@@ -1,6 +1,7 @@
 set editing-mode vi
 set keymap vi
-set convert-meta on
+set input-meta on
+set output-meta on
 
 # ^n cycle through the list of partial matches
 bind -m vi-insert "\C-n":menu-complete
