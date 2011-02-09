@@ -1,0 +1,23 @@
+# Bigger scrollback buffer
+defscrollback 1024
+
+# No startup message
+startup_message off
+
+# Status line
+hardstatus alwayslastline "%?%-Lw%?%n%% %f%t%?(%u)%?%?%+Lw%?%=%H | %d %M %c "
+
+# Title
+shelltitle "$ |bash"
+
+# Do not wait after Escape (annoying in vim)
+maptimeout 0
+
+# Resize split screen
+bind = resize =
+bind + resize +5
+bind - resize -5
+bind _ resize max
+bind n next
+bind p prev
+bind s split
