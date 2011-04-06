@@ -6,6 +6,10 @@ export EDITOR="vim"
 export LSCOLORS=gxfxcxdxbxegedabagacad
 export TERM=xterm-256color
 
+alias t="tofu"
+alias s="tofu -f ~/Dropbox/todo/stugan.txt"
+alias w="tofu -f ~/Dropbox/todo/work.txt"
+
 function parse_git_branch {
   BRANCH=$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1/")
   USER=$(git config --get user.email)
