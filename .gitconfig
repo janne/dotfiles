@@ -1,0 +1,18 @@
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  pr = pull --rebase
+  pushf = push --force-with-lease
+  graph = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --date=short --abbrev-commit
+
+[push]
+  default = current
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+
+[merge]
+  conflictstyle = diff3
