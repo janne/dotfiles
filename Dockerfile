@@ -16,6 +16,7 @@ RUN apt-get install -y \
     python
 
 # Nodejs
+ENV NPM_CONFIG_PREFIX /usr/local
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get install -y nodejs
 
@@ -24,6 +25,7 @@ ADD . /etc/skel/
 
 # Add user
 RUN adduser --disabled-password --gecos '' user
+RUN chown -R user:user /usr/local
 USER user
 WORKDIR /home/user
 
