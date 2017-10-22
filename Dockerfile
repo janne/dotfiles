@@ -1,6 +1,9 @@
 FROM ubuntu
 
-RUN apt-get update && apt-get install -y \
+ENV REFRESHED_AT 2017-10-22
+RUN apt-get -qq update
+
+RUN apt-get install -y \
     bash-completion \
     curl \
     screen \
@@ -17,3 +20,5 @@ WORKDIR /home/user
 
 RUN git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 RUN git clone https://github.com/tpope/vim-surround ~/.vim/bundle/vim-surround
+
+CMD ["/bin/bash"]
