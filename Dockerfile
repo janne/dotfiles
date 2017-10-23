@@ -24,8 +24,6 @@ RUN apt-get install -y nodejs
 # Add dotfiles
 ADD . /etc/skel/
 
-# Sudo
-
 # Add user
 ENV USERNAME user
 RUN adduser --disabled-password --gecos '' $USERNAME
@@ -33,9 +31,5 @@ RUN chown -R $USERNAME:$USERNAME /usr/local
 RUN echo "$USERNAME ALL=NOPASSWD:ALL" >> /etc/sudoers
 USER $USERNAME
 WORKDIR /home/$USERNAME
-
-# Add Vim plugins
-RUN git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
-RUN git clone https://github.com/tpope/vim-surround ~/.vim/bundle/vim-surround
 
 CMD ["/bin/bash"]
