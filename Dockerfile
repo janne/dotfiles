@@ -13,7 +13,8 @@ RUN apt-get install -y \
     vim \
     git \
     ruby-full \
-    python
+    python \
+    sudo
 
 # Nodejs
 ENV NPM_CONFIG_PREFIX /usr/local
@@ -22,6 +23,9 @@ RUN apt-get install -y nodejs
 
 # Add dotfiles
 ADD . /etc/skel/
+
+# Sudo
+RUN echo "user ALL=NOPASSWD:ALL" >> /etc/sudoers
 
 # Add user
 RUN adduser --disabled-password --gecos '' user
