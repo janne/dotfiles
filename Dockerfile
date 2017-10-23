@@ -25,13 +25,14 @@ RUN apt-get install -y nodejs
 ADD . /etc/skel/
 
 # Sudo
-RUN echo "user ALL=NOPASSWD:ALL" >> /etc/sudoers
 
 # Add user
-RUN adduser --disabled-password --gecos '' user
-RUN chown -R user:user /usr/local
-USER user
-WORKDIR /home/user
+ENV USERNAME user
+RUN adduser --disabled-password --gecos '' $USERNAME
+RUN chown -R $USERNAME:$USERNAME /usr/local
+RUN echo "$USERNAME ALL=NOPASSWD:ALL" >> /etc/sudoers
+USER $USERNAME
+WORKDIR /home/$USERNAME
 
 # Add Vim plugins
 RUN git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
