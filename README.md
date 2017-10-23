@@ -17,7 +17,7 @@ How to install them?
 
 ```
 docker pull janne/dotfiles
-docker run -it -h dev janne/dotfiles
+docker run -it -h dev -v $HOME/src:/home/user/src janne/dotfiles
 ```
 
 ### Run on Amazon EC2
@@ -41,7 +41,7 @@ eval $(docker-machine env sandbox)
 
 ```
 docker pull janne/dotfiles
-docker run -it -h dev janne/dotfiles
+docker run -it -h dev -v $HOME/src:/home/user/src janne/dotfiles
 ```
 
 #### Tear down EC2 instance
